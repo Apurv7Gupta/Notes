@@ -1,6 +1,5 @@
-//// Constructor = Special Method that is automatically invoked at time of
-/// obj creation
-// Constructor should have the same name as the class
+//// Constructor = Special Method that is automatically invoked at time of obj creation
+/// Constructor should have the same name as the class
 // has no return type
 
 public class Constructor {
@@ -43,7 +42,15 @@ public class Constructor {
     }
 }
 
+// FEW NOTES -
+
 /*
  * Here, we used public attributes , but in the real world, we use private
  * with setters and getters in OOP
  */
+
+// Constructor Overloading:
+
+// The Phenomenon of having multiple constructors with same name but different types is known as Constructor Overloading
+// Which is an example of POLYMORPHISM
+// This is already shown in the above code
