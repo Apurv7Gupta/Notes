@@ -32,6 +32,9 @@ public:
         color = "Unknown";
     }
 
+    // Cat() : name("Unknown"), color("Unknown") {} // Initializer list syntax
+
+
     Cat(string n, string c) // PARAMETERIZED CONSTRUCTOR declaration
                             // The Phenomenon of having multiple constructors with same name but different types is known as Constructor Overloading, which is an example of POLYMORPHISM
     {
@@ -41,10 +44,16 @@ public:
         color = c;
     }
 
+    // Cat(string n, string c) : name(n), color(c) {} // Initializer list synatx
+
+
+
     Cat(Cat &orgObj){             // COPY CONSTRUCTOR (CUSTOM COPY CONSTRUCTOR) //The original object of Cat is passed here
         this->name = orgObj.name; // The parameters of this constructors is mapped to the original constructor
         this->color = orgObj.color; // A copy constructor allows an object to be copied accurately, which is useful when passing objects by value to functions, returning objects from functions, or explicitly creating a new instance as a copy of another
     }
+
+    // Cat(const Cat &orgObj) : name(orgObj.name), color(orgObj.color) {} // Initializer list syntax, also, using const is best practice
 };
 
 int main()
@@ -64,7 +73,7 @@ int main()
 
     cout<< "\nUsing default copy constructor to copy cat2 parametrized constructor\n";
 
-        Cat CopyCon(cat2);  //COPY CONSTRUCTOR copying cat2 to use the same filled in values (if we hadn't defined the CUSTOM copy constructor earlier, this would be using the DEFAULT copy constructor instead)
+        Cat CopyCon(cat2);  //COPY CONSTRUCTOR copying cat2 to use the same filled in values (if we hadn't de the CUSTOM copy constructor earlier, this would be using the DEFAULT copy constructor instead)
         CopyCon.print_cat();
 
     return 0;
