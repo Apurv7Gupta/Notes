@@ -73,7 +73,7 @@ int main()
 
     cout<< "\nUsing default copy constructor to copy cat2 parametrized constructor\n";
 
-        Cat CopyCon(cat2);  //COPY CONSTRUCTOR copying cat2 to use the same filled in values (if we hadn't de the CUSTOM copy constructor earlier, this would be using the DEFAULT copy constructor instead)
+        Cat CopyCon(cat2);  //COPY CONSTRUCTOR copying cat2 to use the same filled in values (if we hadn't defined the CUSTOM copy constructor earlier, this would be using the DEFAULT copy constructor instead)
         CopyCon.print_cat();
 
     return 0;
