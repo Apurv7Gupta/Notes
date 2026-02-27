@@ -77,4 +77,6 @@ int main()
         CopyCon.print_cat();
 
     return 0;
+
 }
+//// Here, we used public attributes [string name; string color; void print_cat()] , but in the real world, we use private with setters and getters in OOP
