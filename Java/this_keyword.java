@@ -41,6 +41,13 @@ public class this_keyword {
 
         obj.thirdMethod();
 
+        // 4a.
+        Student p = new Student("Rin");
+        p.sendSelf();
+
+        // 4b.
+        new Y();
+
     }
 
     static class Student {
@@ -76,6 +83,30 @@ public class this_keyword {
 
         public void thirdMethod() {
             System.out.println("Name: " + name);
+        }
+
+        // 4a. (Passing "this" in a method)
+
+        public void sendSelf() {
+            receive(this); // passing current object
+        }
+
+        public void receive(Student p) {
+            System.out.println("Received: " + p.name);
+        }
+
+    }
+
+    // 4b. (Passing "this" in a constructor)
+    static class X {
+        X(Y b) {
+            System.out.println("X got Y");
+        } // defining a constructor for X that expects an object of Y
+    }
+
+    static class Y {
+        Y() {
+            X a = new X(this); // passing Y's object as "this"
         }
     }
 
