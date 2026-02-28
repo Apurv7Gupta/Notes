@@ -34,11 +34,12 @@
 public class this_keyword {
 
     public static void main(String[] args) {
+        // 2.
         Student obj = new Student();
         obj.firstMethod(); // Prints both sentences, even though we only called firstMethod
 
         // This was a default constructor call, so this set the "name" attribute to "Unknown" because our default cons calls param cons inside itself
-
+        // 3.
         obj.thirdMethod();
 
         // 4a.
@@ -47,6 +48,9 @@ public class this_keyword {
 
         // 4b.
         new Y();
+
+        // 5.
+        p.setName("Rin").setAge(20).print();
 
     }
 
@@ -93,6 +97,24 @@ public class this_keyword {
 
         public void receive(Student p) {
             System.out.println("Received: " + p.name);
+        }
+
+        // 5.
+
+        // Sets name and returns current object
+        Student setName(String name) {
+            this.name = name;
+            return this; // return current instance
+        }
+
+        // Sets age and returns current object
+        Student setAge(int rollNo) {
+            this.rollNo = rollNo;
+            return this; // return current instance
+        }
+
+        void print() {
+            System.out.println(name + " " + rollNo);
         }
 
     }
