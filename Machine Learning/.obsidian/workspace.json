@@ -1,0 +1,210 @@
+{
+  "main": {
+    "id": "097e2d22f698c86e",
+    "type": "split",
+    "children": [
+      {
+        "id": "84659d9e833b2295",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "719caea57caf60a6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a3cb608d8dcced16",
+    "type": "split",
+    "children": [
+      {
+        "id": "77ef14a46aca8a89",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "886e6b1f6bd421da",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1e9fae2967f4ed0b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "845bbdbdf9402a4d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "7f1ca7297bfa42b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "c4c089f39d55c7c6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c03d87d3f871495d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "254878c686acb6cd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "01315edc7af5f02f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "174cd1c90800338a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "719caea57caf60a6",
+  "lastOpenFiles": [
+    "Loss.md",
+    "Health Informatics Exam Question Bank.md",
+    "Building & Using a Model.md",
+    "Diagrams/Types of ML Systems.md",
+    "Diagrams",
+    "DSA In C++/Index-Root.md",
+    "DSA In C++/Basics/Passing Values.md",
+    "DSA In C++/Basics/Basics Of C++.md",
+    "DSA In C++/OOPs/Inheritance.md",
+    "DSA In C++/Algorithms/Sorting/Introduction.md",
+    "DSA In C++/Basics/Pasted image 20250809003433.png",
+    "DSA In C++/Algorithms/Sorting/Bubble Sort.md",
+    "Excalidraw/STL.md",
+    "DSA In C++/OOPs/Polymorphism.md",
+    "DSA In C++/OOPs/Summary.md",
+    "DSA In C++/OOPs/Object.md",
+    "DSA In C++/OOPs/Class.md",
+    "DSA In C++/OOPs/Abstraction.md",
+    "DSA In C++/OOPs/Encapsulation.md",
+    "DSA In C++/Algorithms/Sorting/Insertion Sort.md",
+    "DSA In C++/Algorithms/Sorting/Selection Sort.md",
+    "DSA In C++/Basics",
+    "DSA In C++/OOPS/Index-OOPS.md",
+    "DSA In C++/STL/Array.md",
+    "DSA In C++/OOPs",
+    "DSA In C++/STL/Stack.md",
+    "DSA In C++/STL/SMF.md",
+    "DSA In C++/STL/deque.md",
+    "DSA In C++/STL/Vector.md",
+    "Excalidraw/Data Structures.restored.md",
+    "Excalidraw/Untitled.canvas",
+    "Excalidraw",
+    "DSA In C++/STL/Comparisons",
+    "Y2a16536",
+    "DSA In C++/STL",
+    "DSA In C++",
+    "drive-download-20250714T082623Z-1-001.zip",
+    "DSA In C++/STL/Sets",
+    "Untitled.canvas"
+  ]
+}
