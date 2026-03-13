@@ -2,15 +2,17 @@ public class Recursion {
 
     public static void main(String[] args) {
 
-        // Self
+        // Direct
         System.out.println(Factorial(5));
 
         // Indirect
         First(5);
 
+        // First() → Second() → First() → Second()
+
     }
 
-    // ----------Self Recursion----------
+    // ----------Direct Recursion----------
 
     public static int Factorial(int n) {
 
@@ -47,5 +49,3 @@ public class Recursion {
     }
 
 }
-
-// First() → Second() → First() → Second()
