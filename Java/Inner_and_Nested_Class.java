@@ -25,7 +25,7 @@ public class Inner_Nested_Class {
                 System.out.println("Nested Static class");
             }
 
-            void StaticMethod() {
+           static void StaticMethod() {
                 // Anonymous class
                 Runnable r = new Runnable() {
                     @Override
@@ -66,12 +66,14 @@ public class Inner_Nested_Class {
 
 // A static class defined inside another class, with no access to the outer class's instance members.
 
-// Nested Classes
-// │
-// ├─ Static Nested Class
-// │
-// └─ Inner Classes
+
+
+// Inner_and_Nested_Class
 //      │
-//      ├─ Member Inner Class
-//      ├─ Local Inner Class
-//      └─ Anonymous Inner Class
+//      └── Outer
+//             │
+//             ├── Inner (member inner class)
+//             │       └── LOCAL (local class)
+//             │
+//             └── StaticInner (static nested class)
+//                     └── Anonymous class (Runnable)
