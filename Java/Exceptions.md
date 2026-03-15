@@ -201,14 +201,22 @@ if (!isValid(user)) {
 
 ```
 Throwable
- ├── Error
- └── Exception
-      ├── IOException
-      ├── RuntimeException
-      │    ├── ArithmeticException
-      │    ├── NullPointerException
-      │    └── ArrayIndexOutOfBoundsException
-      └── Other Checked Exceptions
+├── Error (JVM-level, unrecoverable)
+│   ├── StackOverflowError
+│   └── OutOfMemoryError
+└── Exception
+    ├── Checked (compile-time)
+    │   ├── IOException
+    │   ├── FileNotFoundException
+    │   ├── SQLException
+    │   └── ClassNotFoundException
+    └── Unchecked / RuntimeException
+        ├── ArithmeticException
+        ├── NullPointerException
+        ├── ArrayIndexOutOfBoundsException
+        ├── ClassCastException
+        ├── NumberFormatException
+        └── StackOverflowError
 ```
 
 
