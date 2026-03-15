@@ -1,12 +1,12 @@
-//// Constructor = Special Method that is automatically invoked at time of obj creation
-/// Constructor should have the same name as the class
+// Constructor = Special Method that is automatically invoked at time of obj creation
+// Constructor should have the same name as the class
 // has no return type
 
 public class Constructor {
     public static void main(String[] ParameterName) {
         // Default Cons calling
         MyClass obj = new MyClass();
-        System.out.println(obj.name);
+        System.out.println(obj.name); // Null
 
         // Param Cons calling
         MyClass obj2 = new MyClass(99, "John");
@@ -45,8 +45,7 @@ public class Constructor {
 // FEW NOTES -
 
 /*
- * Here, we used public attributes , but in the real world, we use private
- * with setters and getters in OOP
+ * Here, we used public attributes , but in the real world, we use private with setters and getters in OOP
  */
 
 // Constructor Overloading:
