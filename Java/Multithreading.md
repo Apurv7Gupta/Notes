@@ -54,7 +54,7 @@ class Gurt extends Thread {
 
 public class Main {
     public static void main(String[] args) {
-        Gurt t1 = new MyThread();
+        Gurt t1 = new Gurt();
         t1.start();  // start() creates new thread
     }
 }
