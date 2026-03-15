@@ -65,3 +65,13 @@ public class Inner_Nested_Class {
 // --------------Static Inner Class--------------:
 
 // A static class defined inside another class, with no access to the outer class's instance members.
+
+// Nested Classes
+// │
+// ├─ Static Nested Class
+// │
+// └─ Inner Classes
+//      │
+//      ├─ Member Inner Class
+//      ├─ Local Inner Class
+//      └─ Anonymous Inner Class
