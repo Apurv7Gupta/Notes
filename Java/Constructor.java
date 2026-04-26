@@ -4,9 +4,9 @@
 
 public class Constructor {
     public static void main(String[] ParameterName) {
-        // Default Cons calling
+        // No-Argument cons calling
         MyClass obj = new MyClass();
-        System.out.println(obj.name); // Null
+        System.out.println(obj.name); // Null if no constructor defined, "noArgs" if No-Argument constructor defined
 
         // Param Cons calling
         MyClass obj2 = new MyClass(99, "John");
@@ -23,9 +23,15 @@ public class Constructor {
         public String name;
         public int age;
 
+        // MyClass() {
+        // } // DEFAULT constructor
+        // (Java will automatically give this even if we didn't write it)
+        // But as soon as you define it, its called No-Argument constructor
+
         MyClass() {
-        } // DEFAULT constructor
-          // (Java will automatically give this even if we didn't write it)
+            this.name = "noArgs";
+            this.age = 99;
+        } // No-Argument constructor
 
         MyClass(int x, String Lastname) {
             this.name = Lastname;
