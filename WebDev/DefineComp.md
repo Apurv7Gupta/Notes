@@ -1,6 +1,6 @@
 ## Two ways to define a react component
 
-### function declaration:
+### Arrow function component:
 
 ```jsx
 const CompName = () => {
