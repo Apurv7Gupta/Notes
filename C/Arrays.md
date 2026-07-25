@@ -1,5 +1,3 @@
-# Arrays in C – Complete Guide
-
 An **array** in C is a collection of elements of the **same data type** stored in **contiguous memory locations**.
 
 ## 1. Declaration of Array
@@ -423,5 +421,3 @@ int main()
     return 0;
 }
 ```
-
-This covers the complete array concept in C: declaration, initialization, memory layout, pointers, 1D/2D arrays, strings, functions, searching, sorting, advantages, limitations, and interview questions.
