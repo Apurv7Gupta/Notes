@@ -15,6 +15,7 @@ int main(){
     head->next = malloc(sizeof(struct Node));
     head->next->next = malloc(sizeof(struct Node));
 
+    // [optional] Check malloc (of every node, here we check only for head)
     if (head == NULL)
     {
         return 1; // allocation failed
@@ -33,4 +34,20 @@ int main(){
 
     return 0;
 }
+```
+
+Print the list
+ - Make sure you print before freeing
+
+```c
+    struct Node *temp = head;
+    while (temp)
+    {
+        printf("%d ", temp->data);
+
+        if (temp->next)
+            printf("->");
+
+        temp = temp->next;
+    }
 ```
