@@ -1,3 +1,5 @@
+### Create SLL
+
 ```c
 #include <stdio.h>   // printf
 #include <stdlib.h>   // malloc(), free()
@@ -37,7 +39,7 @@ int main(){
 }
 ```
 
-Print the list
+### Print the list
  - Make sure you print before freeing
 
 ```c
@@ -50,5 +52,51 @@ Print the list
             printf("->");
 
         temp = temp->next;
+    }
+```
+
+### SLL from an array
+
+```c
+ int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    // Create first node
+    struct Node *head = malloc(sizeof(struct Node));
+    head->data = arr[0];
+    head->next = NULL;
+
+    struct Node *tail = head;
+
+    // Create remaining nodes
+    for (int i = 1; i < size; i++)
+    {
+        tail->next = malloc(sizeof(struct Node));
+        tail = tail->next;
+
+        tail->data = arr[i];
+        tail->next = NULL;
+    }
+
+    // Print list
+    struct Node *temp = head;
+    while (temp)
+    {
+        printf("%d", temp->data);
+
+        if (temp->next)
+            printf(" -> ");
+
+        temp = temp->next;
+    }
+    printf(" -> NULL\n");
+
+    // Free list
+    temp = head;
+    while (temp)
+    {
+        struct Node *next = temp->next;
+        free(temp);
+        temp = next;
     }
 ```
