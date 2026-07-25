@@ -1,4 +1,5 @@
 ```c
+#include <stdio.h>   // printf
 #include <stdlib.h>   // malloc(), free()
 #include <stddef.h>   // NULL (optional, Usually, <stdlib.h> is enough, because it also provides NULL on most implementations)
 
