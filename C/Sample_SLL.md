@@ -10,20 +10,29 @@ struct Node *next;
 
 
 int main(){
-    struct Node* head = malloc(sizeof(struct Node));
-
+    struct Node *head = malloc(sizeof(struct Node));
 
     if (head == NULL)
     {
         return 1; // allocation failed
     }
 
-    head->data = 1;
-    head->next = NULL;
+    // Allocate nodes
+    struct Node *head = malloc(sizeof(struct Node));
+    head->next = malloc(sizeof(struct Node));
+    head->next->next = malloc(sizeof(struct Node));
 
+    // Define the structure
+    head->data = 1;
+    head->next->data = 2;
+    head->next->next->data = 3;
+    head->next->next->next = NULL;
+
+    // free every node
+    free(head->next->next);
+    free(head->next);
     free(head);
 
     return 0;
-
 }
 ```
