@@ -10,17 +10,15 @@ struct Node *next;
 
 
 int main(){
+    // Allocate nodes
     struct Node *head = malloc(sizeof(struct Node));
+    head->next = malloc(sizeof(struct Node));
+    head->next->next = malloc(sizeof(struct Node));
 
     if (head == NULL)
     {
         return 1; // allocation failed
     }
-
-    // Allocate nodes
-    struct Node *head = malloc(sizeof(struct Node));
-    head->next = malloc(sizeof(struct Node));
-    head->next->next = malloc(sizeof(struct Node));
 
     // Define the structure
     head->data = 1;
