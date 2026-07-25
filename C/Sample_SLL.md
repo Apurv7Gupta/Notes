@@ -1,6 +1,6 @@
 ```c
 #include <stdlib.h>   // malloc(), free()
-#include <stddef.h>   // NULL (optional, see below)
+#include <stddef.h>   // NULL (optional, Usually, <stdlib.h> is enough, because it also provides NULL on most implementations)
 
 struct Node
 {
