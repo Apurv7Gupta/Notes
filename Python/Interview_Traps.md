@@ -88,7 +88,7 @@ print(f())
 # [1, 1, 1]
 ```
 
-```python
+```
 Function definition:
 x ───► []
 
@@ -116,7 +116,7 @@ def f(x=None):
 	print(f())   # [1]
 ```
 
-```python
+```
 default x ───► None
 1) f()
 	x ───► None
@@ -164,7 +164,7 @@ print(c)
 
 `copy` Creates a **new outer list**, but the inner lists are **shared**.
 
-```python
+```
 a
  │
  ▼
@@ -180,7 +180,7 @@ a
 
 using `copy`,  Python creates a new outer list, but it doesn't copy the inner lists.
 
-```python
+```
 a                     b
  │                     │
  ▼                     ▼
@@ -359,7 +359,7 @@ print(bool(0))      # False
 print(bool(None))   # False
 ```
 
-```python
+```
 All these values will be False:
 
 	False
