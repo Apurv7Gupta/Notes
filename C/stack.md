@@ -36,12 +36,15 @@ int top = -1;
 
 void push(int x)
 {
-    stack[++top] = x;
+    top = top + 1;
+    stack[top] = x;
 }
 
 int pop()
 {
-    return stack[top--];
+    int temp = stack[top];
+    top = top - 1;
+    return temp;
 }
 
 int main()
