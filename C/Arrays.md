@@ -391,6 +391,14 @@ The first element is at offset 0 from the base address.
 
 ---
 
+## Size of an array
+
+```cpp
+size_t n = sizeof(arr) / sizeof(arr[0]);
+
+Works *only in the scope* where the array actually exists.
+```
+
 ## Example Program
 
 ```c
