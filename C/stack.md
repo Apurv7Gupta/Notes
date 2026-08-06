@@ -84,3 +84,13 @@ int main()
     return 0;
 }
 ```
+
+### Algorithm
+
+- Scan the postfix expression from left to right.
+- If the symbol is a number, push it onto the stack.
+- If the symbol is an operator:
+- Pop the top two numbers.
+- Apply the operator (a op b).
+- Push the result back onto the stack.
+- After solving the entire expression, the only element left on the stack is the final result.
