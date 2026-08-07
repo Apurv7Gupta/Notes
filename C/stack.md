@@ -1,3 +1,5 @@
+## Expression Evaluation
+
 A classic stack application is evaluating a postfix (Reverse Polish) expression.
 
 ### Example
@@ -97,3 +99,86 @@ int main()
 - Apply the operator (a op b).
 - Push the result back onto the stack.
 - After solving the entire expression, the only element left on the stack is the final result.
+
+
+## Conversion of Infix to postfix expression
+
+```c
+char stack[MAX];
+int top = -1;
+
+// Push operation
+
+
+// Pop operation
+
+
+// Return top element
+char peek() {
+    if (top == -1)
+        return -1;
+    return stack[top];
+}
+
+// Check precedence
+int precedence(char ch) {
+    switch (ch) {
+        case '^': return 3;
+        case '*':
+        case '/':
+        case '%': return 2;
+        case '+':
+        case '-': return 1;
+        default: return 0;
+    }
+}
+
+int main() {
+    char infix[MAX], postfix[MAX];
+    int i, j = 0;
+
+    printf("Enter Infix Expression: ");
+    scanf("%s", infix);
+
+    for (i = 0; i < strlen(infix); i++) {
+        char ch = infix[i];
+
+        // If operand, add to postfix
+        if (isalnum(ch)) {
+            postfix[j++] = ch;
+        }
+        // If '(', push to stack
+        else if (ch == '(') {
+            push(ch);
+        }
+        // If ')', pop until '('
+        else if (ch == ')') {
+            while (peek() != '(')
+                postfix[j++] = pop();
+            pop(); // Remove '('
+        }
+        // Operator
+        else {
+            while (top != -1 && precedence(peek()) >= precedence(ch)) {
+                postfix[j++] = pop();
+            }
+            push(ch);
+        }
+    }
+
+    // Pop remaining operators
+    while (top != -1) {
+        postfix[j++] = pop();
+    }
+
+    postfix[j] = '\0';
+
+    printf("Postfix Expression: %s\n", postfix);
+
+    return 0;
+}
+```
+
+
+
+## Conversion of Infix to prefix expression
