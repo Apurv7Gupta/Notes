@@ -103,6 +103,14 @@ int main()
 
 ## Conversion of Infix to postfix expression
 
+- Scan the infix expression from left to right.
+- If the symbol is an operand, add it to the postfix expression.
+- If it is '(', push it onto the stack.
+- If it is ')', pop operators until '(' is found.
+- If it is an operator, pop operators from the stack while they have higher or equal precedence, then push the current operator.
+- After scanning the expression, pop all remaining operators from the stack.
+- The resulting string is the postfix expression.
+
 ```c
 char stack[MAX];
 int top = -1;
@@ -181,4 +189,106 @@ int main() {
 
 
 
-## Conversion of Infix to prefix expression
+## Conversion of Infix to Prefix expression
+
+- Reverse the infix expression.
+- Replace every '(' with ')' and every ')' with '('.
+- Convert the modified infix expression to postfix using a stack.
+- Reverse the postfix expression.
+- The reversed postfix expression is the required prefix expression.
+
+
+```c
+
+char stack[MAX];
+int top = -1;
+
+// Push operation
+
+// Pop operation
+
+// Peek operation
+char peek() {
+    if (top == -1)
+        return -1;
+    return stack[top];
+}
+
+// Check precedence
+int precedence(char ch) {
+    switch (ch) {
+        case '^': return 3;
+        case '*':
+        case '/':
+        case '%': return 2;
+        case '+':
+        case '-': return 1;
+        default: return 0;
+    }
+}
+
+// Reverse string
+void reverse(char str[]) {
+    int i, j;
+    char temp;
+    for (i = 0, j = strlen(str) - 1; i < j; i++, j--) {
+        temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
+    }
+}
+
+int main() {
+    char infix[MAX], postfix[MAX], prefix[MAX];
+    int i, j = 0;
+
+    printf("Enter Infix Expression: ");
+    scanf("%s", infix);
+
+    // Step 1: Reverse infix expression
+    reverse(infix);
+
+    // Step 2: Replace '(' with ')' and vice versa
+    for (i = 0; infix[i] != '\0'; i++) {
+        if (infix[i] == '(')
+            infix[i] = ')';
+        else if (infix[i] == ')')
+            infix[i] = '(';
+    }
+
+    // Step 3: Convert reversed infix to postfix
+    for (i = 0; infix[i] != '\0'; i++) {
+        char ch = infix[i];
+
+        if (isalnum(ch)) {
+            postfix[j++] = ch;
+        }
+        else if (ch == '(') {
+            push(ch);
+        }
+        else if (ch == ')') {
+            while (peek() != '(')
+                postfix[j++] = pop();
+            pop();
+        }
+        else {
+            while (top != -1 && precedence(peek()) >= precedence(ch))
+                postfix[j++] = pop();
+            push(ch);
+        }
+    }
+
+    while (top != -1)
+        postfix[j++] = pop();
+
+    postfix[j] = '\0';
+
+    // Step 4: Reverse postfix to get prefix
+    strcpy(prefix, postfix);
+    reverse(prefix);
+
+    printf("Prefix Expression: %s\n", prefix);
+
+    return 0;
+}
+```
