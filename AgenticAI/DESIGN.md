@@ -1,7 +1,5 @@
 <!-- BEGIN:project-rules -->
 
-- Treat PROJECT-INFO.md as the master document for overall information about the project.
-
 ## Frontend Design System & Authority Hierarchy
 
 **⚠️ SUPREME DIRECTIVE: PROJECT-INFO.md OVERRIDES ALL ⚠️**
