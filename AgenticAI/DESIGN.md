@@ -22,7 +22,7 @@
 Never implement the following outdated design defaults:
 
 - **Ban emoji use:** Do NOT use emojis ANYWHERE in the project. Use SVG icons when necessary.
-- **Icon Overuse:** Do not use icons where they are not necessary.
+- **Icon Overuse:** Do not use icons everywhere for the sake of visual enhancement, use icons only where STRICTLY necessary, try to keep things minimal.
 - **Pure Black & White:** Never use `#000000` or `#FFFFFF` for primary backgrounds or text.
 - **Default Saturated Colors:** Ban raw, highly saturated default browser colors. Rely on desaturated scales (e.g., slate, zinc, neutral).
 - **Heavy Drop Shadows:** Ban generic, high-opacity, single-layer drop shadows (e.g., `box-shadow: 0 4px 8px rgba(0,0,0,0.3)`), use flat cards and panels with no shadows, do not apply shadows on hover as well, keep them flat.
