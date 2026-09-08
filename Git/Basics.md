@@ -17,6 +17,22 @@ git branch -M main
 git push -u origin main
 ```
 
+#### If you intentionally want to overwrite the remote's commits
+
+If your local folder is the ground truth and you intentionally want to replace the remote main with exactly what you have locally, force-push it.
+
+```
+git push --force-with-lease -u origin main
+```
+
+```
+If that gets rejected because your local repo has no relationship with the remote history, use:
+```
+
+```
+git push --force -u origin main
+```
+
 
 
 ### How to create a branch:
