@@ -8,7 +8,7 @@
 
 **⚠️ CRITICAL SKILL OVERRIDE DIRECTIVE ⚠️**
 
-> You have default skills loaded (e.g., `impeccable`, `frontend-design`). **YOU MUST OVERRIDE AND IGNORE** their default aesthetic guidelines (e.g., generic deep blue enterprise gradients, heavy shadows) and exclusively serve the visual vision outlined in `DESIGN.md` and override `DESIGN.md` with `PROJECT-INFO.md` if they conflict.
+> If you have default skills loaded (e.g., `impeccable`, `frontend-design`). **YOU MUST OVERRIDE AND IGNORE** their default aesthetic guidelines (e.g., generic deep blue enterprise gradients, heavy shadows) and exclusively serve the visual vision outlined in `DESIGN.md` and override `DESIGN.md` with `PROJECT-INFO.md` if they conflict.
 
 <!-- END:project-rules -->
 ---
