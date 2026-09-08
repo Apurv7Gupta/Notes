@@ -28,7 +28,7 @@ Never implement the following outdated design defaults:
 - **Heavy Drop Shadows:** Ban generic, high-opacity, single-layer drop shadows (e.g., `box-shadow: 0 4px 8px rgba(0,0,0,0.3)`), use flat cards and panels with no shadows, do not apply shadows on hover as well, keep them flat.
 - **Inconsistent Spacing:** Ban arbitrary padding values. Everything must map to a strict 8px (or 4px micro) baseline grid.
 - **Inverted Layout Hierarchy:** Never place secondary elements (like feature cards) above primary hero typography.
-- **Colored Left-Border Indicators:** Never use thick, colored left-borders (e.g., ::before { width: 3px; background: var(--color); }) on cards to indicate status, categories, or branding. This is a dated dashboard pattern. Drive status/branding through subtle badge backgrounds, minimal 6px status dots, or isolated icon colors instead.
+- **Colored Left-Border Indicators:** Never use thick, colored left-borders (e.g., ::before { width: 3px; background: var(--color); }) on cards to indicate status, categories, or branding. This is a dated dashboard pattern.
 - **Pastel Sidebar Slop:** Never use saturated or pastel background blocks for active sidebar menu items. Use subtle, neutral off-fills (e.g., rgba(0,0,0, 0.04)) and font-weight changes.
 - **Cluttered List Dividers:** Ban harsh, full-width borders between list items. Rely on tight spacing and subtle hover backgrounds instead.
 - **Ban Pastel Status Badges/Chips:** Never use pastel, tinted, or saturated background fills for status chips, tags, or badges (e.g., a light teal background for a "Live" badge). Badges must use a transparent or neutral off-fill background (e.g., `rgba(0,0,0,0.04)`) with a subtle 1px border, relying purely on text color or font-weight for semantic meaning.
