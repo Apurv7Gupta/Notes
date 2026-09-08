@@ -14,6 +14,12 @@ activate
 myvenv\Scripts\activate
 ```
 
+In **Windows Git Bash**:
+
+```bash
+source myvenv/Scripts/activate
+```
+
 install from reqs.txt
 
 ```cmd
