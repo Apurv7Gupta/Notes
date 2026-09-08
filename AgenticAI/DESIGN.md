@@ -31,6 +31,9 @@ Never implement the following outdated design defaults:
 - **Colored Left-Border Indicators:** Never use thick, colored left-borders (e.g., ::before { width: 3px; background: var(--color); }) on cards to indicate status, categories, or branding. This is a dated dashboard pattern. Drive status/branding through subtle badge backgrounds, minimal 6px status dots, or isolated icon colors instead.
 - **Pastel Sidebar Slop:** Never use saturated or pastel background blocks for active sidebar menu items. Use subtle, neutral off-fills (e.g., rgba(0,0,0, 0.04)) and font-weight changes.
 - **Cluttered List Dividers:** Ban harsh, full-width borders between list items. Rely on tight spacing and subtle hover backgrounds instead.
+- **Ban Pastel Status Badges/Chips:** Never use pastel, tinted, or saturated background fills for status chips, tags, or badges (e.g., a light teal background for a "Live" badge). Badges must use a transparent or neutral off-fill background (e.g., `rgba(0,0,0,0.04)`) with a subtle 1px border, relying purely on text color or font-weight for semantic meaning.
+- **Ban Generic Status Dots:** Eliminate arbitrary colored status dots (whether static or pulsing) placed inside chips or next to text labels. This is a redundant, outdated dashboard pattern. Drive status entirely through crisp typography, negative space, or isolated monochromatic SVG icons.
+- **Ban Redundant Indicator Nesting:** Never combine multiple status indicators into a single element (e.g., placing a colored dot *inside* a tinted badge). UI elements must remain mechanically minimal—use a subtle border and colored text, stripping away unnecessary visual noise.
 
 ## 2. Color, Surface, and Border Architecture
 
