@@ -35,6 +35,7 @@ Never implement the following outdated design defaults:
 - **Ban Generic Status Dots:** Eliminate arbitrary colored status dots (whether static or pulsing) placed inside chips or next to text labels. This is a redundant, outdated dashboard pattern. Drive status entirely through crisp typography, negative space, or isolated monochromatic SVG icons.
 - **Ban Redundant Indicator Nesting:** Never combine multiple status indicators into a single element (e.g., placing a colored dot *inside* a tinted badge). UI elements must remain mechanically minimal—use a subtle border and colored text, stripping away unnecessary visual noise.
 - **Limit Badge Density**: Do not wrap every piece of metadata in a pill or badge. Use raw, unboxed typography (e.g., a secondary text color with a smaller rem size) for standard data like dates, roles, categories, or IDs. Save structural enclosures (badges, chips) exclusively for high-priority tags or actionable statuses.
+- **Ban Default Fonts**: Do NOT use `Inter`, `Roboto`, or standard system sans-serifs. Force a modern geometric or neo-grotesque typeface (e.g., `Geist`, `Plus Jakarta Sans`, or `Manrope`) to instantly elevate the aesthetic.
 
 ## 2. Color, Surface, and Border Architecture
 
